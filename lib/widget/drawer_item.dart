@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:responsive_dashboard/utils/drawer_item_model.dart';
+import 'package:responsive_dashboard/utils/model/drawer_item_model.dart';
 import 'package:responsive_dashboard/utils/styles.dart';
 
 class DrawerItem extends StatelessWidget {
