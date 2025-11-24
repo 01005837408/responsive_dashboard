@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dashboard/view/dashboard_view.dart';
 
-import 'feature/drawer_dashboard.dart/view/dashboard_view.dart';
-
+ 
 void main() {
   runApp(const MyApp());
 }
