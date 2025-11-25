@@ -1,4 +1,4 @@
-class AllExpansesItemModel {
+class  AllExpansesItemModel {
   final String image;
   final String title;
   final String data;
