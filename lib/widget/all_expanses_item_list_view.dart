@@ -3,8 +3,8 @@ import 'package:responsive_dashboard/utils/app_assets.dart';
 import 'package:responsive_dashboard/utils/model/all_expanses_item_model.dart';
 import 'package:responsive_dashboard/widget/all_expanses_item.dart';
 
-class AllExpansesItemListView extends StatelessWidget {
-  const AllExpansesItemListView({super.key});
+class AllExpansesItemListView extends StatefulWidget {
+    AllExpansesItemListView({super.key});
   static const allExpansesItemModelList = [
       AllExpansesItemModel(
         image: Assets.assetsImagesBalance,
@@ -23,17 +23,33 @@ class AllExpansesItemListView extends StatelessWidget {
         data: "April 2022",
         price: r'$20,129'),
   ];
+  int selectedIndex = 0;
+
+  @override
+  State<AllExpansesItemListView> createState() => _AllExpansesItemListViewState();
+}
+
+class _AllExpansesItemListViewState extends State<AllExpansesItemListView> {
   @override
   Widget build(BuildContext context) {
     return Row(
-      children: allExpansesItemModelList.asMap().entries.map((e) {
+      children: AllExpansesItemListView.allExpansesItemModelList.asMap().entries.map((e) {
         int index = e.key;
         return Expanded(
           child: Padding(
             padding: index == 1
                 ? const EdgeInsets.symmetric(horizontal: 12)
                 : EdgeInsets.zero,
-            child: AllExpansesItem(allExpansesItemModel: e.value),
+            child: InkWell(
+              onTap: () {
+                setState(() {
+                  widget.selectedIndex = index;
+                });
+              },
+              child: AllExpansesItem(
+                isSelected: widget.selectedIndex == index,
+                allExpansesItemModel: e.value),
+            ),
           ),
         );
       }).toList(),

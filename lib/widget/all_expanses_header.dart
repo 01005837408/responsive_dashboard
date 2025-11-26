@@ -29,7 +29,9 @@ class AllExpansesHeader extends StatelessWidget {
                 SizedBox(width: 16,),
                 Transform.rotate(
                   angle: -1.5708,
-                  child: Icon(Icons.arrow_back_ios_new_rounded, color: Color(0xff064061),),
+                  child: Icon(Icons.arrow_back_ios_new_rounded,
+                  
+                   color: Color(0xff064061),),
                 )
               ],
             ),
