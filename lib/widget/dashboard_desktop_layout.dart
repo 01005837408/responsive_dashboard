@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/widget/all_expanses.dart';
 import 'package:responsive_dashboard/widget/custom_drawer.dart';
+import 'package:responsive_dashboard/widget/quick_invioce.dart';
 
 
 class DashboardDesktopLayout extends StatelessWidget {
@@ -15,7 +16,14 @@ class DashboardDesktopLayout extends StatelessWidget {
         SizedBox(width: 32,),
         Expanded(
           flex: 2,
-          child: AllExpanses(),)
+          child: Column(
+            children: [
+              AllExpanses(),
+              QuickInvioce(),
+              
+            ],
+          ),
+        )
        
        
         

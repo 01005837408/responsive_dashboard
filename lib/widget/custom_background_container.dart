@@ -13,7 +13,7 @@ class CustomBackgroundContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: EdgeInsets.all(20),
+        margin: EdgeInsets.only(top: 20, right: 20, ),
         padding: EdgeInsets.all(padding ?? 20),
         decoration: ShapeDecoration(
           color: Color(0xFFFFFFFF),
