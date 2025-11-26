@@ -1,11 +1,13 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/utils/app_assets.dart';
 import 'package:responsive_dashboard/utils/model/all_expanses_item_model.dart';
 import 'package:responsive_dashboard/widget/all_expanses_item.dart';
 
 class AllExpansesItemListView extends StatefulWidget {
-    AllExpansesItemListView({super.key});
-  static const allExpansesItemModelList = [
+      AllExpansesItemListView({super.key});
+    static const allExpansesItemModelList = [
       AllExpansesItemModel(
         image: Assets.assetsImagesBalance,
         title: "Balance",

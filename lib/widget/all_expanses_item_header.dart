@@ -12,8 +12,8 @@ class AllExpansesItemHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(children: [
       Container(
-        width: 60,
-        height: 60,
+        width: 32,
+        height: 32,
         decoration: ShapeDecoration(
           color: imageBackgroundColor??Color(0xFFFAFAFA),
           shape: OvalBorder(),
