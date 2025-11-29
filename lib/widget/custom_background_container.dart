@@ -20,7 +20,7 @@ class CustomBackgroundContainer extends StatelessWidget {
           shape: RoundedRectangleBorder(
             side: BorderSide(
               width: 1,
-              color: Color(0xff064061),
+              color: Color(0xFFFFFFFF),
             ),
             borderRadius: BorderRadius.circular(12),
           ),

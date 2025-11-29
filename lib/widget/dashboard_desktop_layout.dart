@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
-import 'package:responsive_dashboard/widget/all_expanses.dart';
+ import 'package:responsive_dashboard/widget/all_expanses_and_quick_invois_section.dart';
 import 'package:responsive_dashboard/widget/custom_drawer.dart';
-import 'package:responsive_dashboard/widget/quick_invioce.dart';
-
+ 
 
 class DashboardDesktopLayout extends StatelessWidget {
   const DashboardDesktopLayout({super.key});
@@ -17,14 +15,7 @@ class DashboardDesktopLayout extends StatelessWidget {
         SizedBox(width: 32,),
         Expanded(
           flex: 2,
-          child: Column(
-            children: [
-              AllExpanses(),
-              Gap(12),
-              QuickInvioce(),
-              
-            ],
-          ),
+          child: AllExpansesAndQuickInvoisSection(),
         )
        
        

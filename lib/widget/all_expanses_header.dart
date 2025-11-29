@@ -11,6 +11,7 @@ class AllExpansesHeader extends StatelessWidget {
         Text('All Expanses', style:AppStyles.styleSemiBold20 ,),
         Expanded(child: SizedBox()),
         Container(
+        //  margin: EdgeInsets.only(top: 12),
           padding: EdgeInsets.all(8),
           decoration: ShapeDecoration(
             color: Colors.white,
