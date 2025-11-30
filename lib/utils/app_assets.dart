@@ -10,7 +10,8 @@ class Assets {
 
   /// Assets for assetsImagesCard
   /// assets/images/card.svg
-  static const String assetsImagesCard = "assets/images/card.svg";
+  static const String assetsImagesCard = "assets/images/card.png";
+  static const String assetsImagesGallery = "assets/images/gallery.svg";
 
   /// Assets for assetsImagesDashboard
   /// assets/images/dashboard.svg
