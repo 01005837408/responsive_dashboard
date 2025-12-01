@@ -1,14 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:responsive_dashboard/utils/app_assets.dart';
-import 'package:responsive_dashboard/utils/styles.dart';
  import 'package:responsive_dashboard/widget/all_expanses_and_quick_invois_section.dart';
-import 'package:responsive_dashboard/widget/custom_dot_indicator.dart';
 import 'package:responsive_dashboard/widget/custom_drawer.dart';
-import 'package:responsive_dashboard/widget/dots_indicator.dart';
-import 'package:responsive_dashboard/widget/my_card.dart';
-import 'package:responsive_dashboard/widget/my_card_page_view.dart';
-import 'package:responsive_dashboard/widget/my_card_section.dart';
+import 'package:responsive_dashboard/widget/my_card_and_transaction_section.dart';
+
  
 
 class DashboardDesktopLayout extends StatelessWidget {
@@ -19,7 +13,7 @@ class DashboardDesktopLayout extends StatelessWidget {
     return const Row(
       children: 
       [
-        Expanded(child: CustomDrawer()),
+        Expanded(child: CustomDrawer()),      
         SizedBox(width: 32,),
         Expanded(
           flex: 2,
@@ -28,7 +22,7 @@ class DashboardDesktopLayout extends StatelessWidget {
         SizedBox(width: 8,),
        
        // Expanded(child: CustomDotIndicator(isActive: false)),
-       Expanded(child: MyCardSection()),
+       Expanded(child: MyCardAndTransactionSection()),
        
        
         

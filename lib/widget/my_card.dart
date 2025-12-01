@@ -22,7 +22,7 @@ class MyCard extends StatelessWidget {
           ),
         ),
       child: Column(
-
+      
         children: [
           ListTile(
             contentPadding: EdgeInsets.only(left: 30, right: 40, top: 16),
@@ -50,7 +50,7 @@ class MyCard extends StatelessWidget {
             
         ],
       ),
-
+      
       )
     );
   }
