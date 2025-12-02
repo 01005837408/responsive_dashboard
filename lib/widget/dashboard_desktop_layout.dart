@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
  import 'package:responsive_dashboard/widget/all_expanses_and_quick_invois_section.dart';
+import 'package:responsive_dashboard/widget/custom_background_container.dart';
 import 'package:responsive_dashboard/widget/custom_drawer.dart';
+import 'package:responsive_dashboard/widget/in_come_section.dart';
 import 'package:responsive_dashboard/widget/my_card_and_transaction_section.dart';
+
+import '../utils/styles.dart';
 
  
 
@@ -22,7 +26,7 @@ class DashboardDesktopLayout extends StatelessWidget {
         SizedBox(width: 8,),
        
        // Expanded(child: CustomDotIndicator(isActive: false)),
-       Expanded(child: MyCardAndTransactionSection()),
+       Expanded(child: InComeSection()),
        
        
         

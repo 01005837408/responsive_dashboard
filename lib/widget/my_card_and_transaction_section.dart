@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dashboard/widget/dashboard_desktop_layout.dart';
+import 'package:responsive_dashboard/widget/in_come_section.dart';
 import 'package:responsive_dashboard/widget/my_card_section.dart';
 import 'package:responsive_dashboard/widget/transaction_history.dart';
 
@@ -14,6 +16,8 @@ class MyCardAndTransactionSection extends StatelessWidget {
         Divider(height: 32,),
         // SizedBox(height: 16,),
         TransactionHistory(),
+        SizedBox(height: 16,),
+        InComeSection(),
       ],
     );
   }
