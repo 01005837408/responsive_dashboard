@@ -14,7 +14,7 @@ class IncomeSectionHeader extends StatelessWidget {
                 Text("Income", style:AppStyles.styleSemiBold20),
     
         Container(
-          padding: EdgeInsets.symmetric(horizontal: 6, vertical: 12),
+          padding: EdgeInsets.symmetric(horizontal: 6, vertical: 6),
           decoration: ShapeDecoration(
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(8),

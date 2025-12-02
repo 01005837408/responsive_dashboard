@@ -41,9 +41,9 @@ class _MyCardSectionState extends State<MyCardSection> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text("My Card", style: AppStyles.styleSemiBold20),
-          Gap(12,),
+          Gap(8,),
           MyCardPageView(pageController: pageController),
-          Gap(12),
+          Gap(8),
           DotsIndicator(currentIndex: currentPageIndex),
         ],
       ),

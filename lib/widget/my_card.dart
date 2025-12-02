@@ -25,7 +25,7 @@ class MyCard extends StatelessWidget {
       
         children: [
           ListTile(
-            contentPadding: EdgeInsets.only(left: 30, right: 40, top: 16),
+            contentPadding: EdgeInsets.only(left: 30, right: 30, top: 12),
             title: Text("Name card", style: AppStyles.styleRegular16.copyWith(color: Colors.white),),
             subtitle: Text("View Details", style: AppStyles.styleMedium20,),
             trailing: SvgPicture.asset(Assets.assetsImagesGallery)

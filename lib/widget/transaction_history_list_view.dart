@@ -5,12 +5,12 @@ import 'package:responsive_dashboard/widget/transaction_history_item.dart';
 class TransactionHistoryListView extends StatelessWidget {
   const TransactionHistoryListView({super.key});
     static const  items =  [
-      TransactionHistoryModel(
-        title:"Cash Withdrawal",
-        amount: r"$400.00",
-        date: "13 Apr, 2022 ", 
-        isWithdrawn: true,
-      ),
+      // TransactionHistoryModel(
+      //   title:"Cash Withdrawal",
+      //   amount: r"$400.00",
+      //   date: "13 Apr, 2022 ", 
+      //   isWithdrawn: true,
+      // ),
        TransactionHistoryModel(
         title:"Cash Withdrawal",
         amount: r"$400.00",
