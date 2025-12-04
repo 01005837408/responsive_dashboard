@@ -10,17 +10,17 @@ class IncomeDetailes extends StatelessWidget {
       title: "Design service",
       value: "40%",
     ),
-     ItemDetailesModel(
+    ItemDetailesModel(
       color: Color(0xff4EB7F2),
       title: "Design Product",
       value: "25%",
     ),
-     ItemDetailesModel(
+    ItemDetailesModel(
       color: Color(0xff064061),
       title: "Design royalit",
       value: "22%",
     ),
-      ItemDetailesModel(
+    ItemDetailesModel(
       color: Color(0xffE2DECD),
       title: "Others",
       value: "20%",
@@ -28,13 +28,23 @@ class IncomeDetailes extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
-    return   ListView.builder(
-      shrinkWrap: true,
-      
-      itemBuilder: (context , index){
-        return ItemIncomeDetailes(itemDetailesModel: items[index],);
-      },
-      itemCount: items.length,
+    return Column(
+      children: items
+          .map(
+            (e) => ItemIncomeDetailes(
+              itemDetailesModel: e,
+            ),
+          )
+          .toList(),
     );
+    // return ListView.builder(
+    //   shrinkWrap: true,
+    //   itemBuilder: (context, index) {
+    //     return ItemIncomeDetailes(
+    //       itemDetailesModel: items[index],
+    //     );
+    //   },
+    //   itemCount: items.length,
+    // );
   }
 }

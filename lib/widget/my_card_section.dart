@@ -36,7 +36,7 @@ class _MyCardSectionState extends State<MyCardSection> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 20.0, right: 20, ),
+      padding: const EdgeInsets.only(top: 8.0, right: 20, ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

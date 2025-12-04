@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/utils/model/transaction_histry_model.dart';
 import 'package:responsive_dashboard/widget/transaction_history_item.dart';
@@ -28,13 +30,18 @@ class TransactionHistoryListView extends StatelessWidget {
     ];
   @override
   Widget build(BuildContext context) {
-    return  ListView.builder(
-      itemCount: items.length,
-      shrinkWrap: true,
-      physics: NeverScrollableScrollPhysics(),
-      itemBuilder: (context, index) {
-        return TransactionHistoryItem(transactionHistryModel: items[index],);
-      },
+    return Column(
+      children: items.map((e)=> TransactionHistoryItem(transactionHistryModel : e)
+      ).toList() ,
     );
+   
+    // return  ListView.builder(
+    //   itemCount: items.length,
+    //   shrinkWrap: true,
+    //   physics: NeverScrollableScrollPhysics(),
+    //   itemBuilder: (context, index) {
+    //     return TransactionHistoryItem(transactionHistryModel: items[index],);
+    //   },
+    // );
   }
 }
