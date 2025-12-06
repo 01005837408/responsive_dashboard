@@ -9,7 +9,7 @@ final WidgetBuilder mobileLayout , tabletLayout, desktopLayout;
     return LayoutBuilder(builder: (context, constraints) {
       if (constraints.maxWidth < 700) {
         return mobileLayout(context);
-      } else if (constraints.maxWidth < 1100) {
+      } else if (constraints.maxWidth < 1000) {
         return tabletLayout(context);
       } else {
         return desktopLayout(context);

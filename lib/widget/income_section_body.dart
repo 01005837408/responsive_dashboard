@@ -12,8 +12,9 @@ class IncomeSectionBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
-    log(width);
-    return width >= 1200 && width < 1600
+   // log( MediaQuery.of(context).size.width.toString());
+    print("width $width" );
+    return width >= 1000 && width <= 1365
         ? SizedBox()
         : Row(
             children: [
