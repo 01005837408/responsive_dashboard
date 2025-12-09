@@ -6,6 +6,8 @@ final WidgetBuilder mobileLayout , tabletLayout, desktopLayout;
 
   @override
   Widget build(BuildContext context) {
+    double width = MediaQuery.of(context).size.width;
+    print("AdaptiveLayout width: $width");
     return LayoutBuilder(builder: (context, constraints) {
       if (constraints.maxWidth < 700) {
         return mobileLayout(context);

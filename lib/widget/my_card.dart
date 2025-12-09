@@ -9,7 +9,7 @@ class MyCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  AspectRatio(
-      aspectRatio: 420/215, // width / height
+      aspectRatio: 440/215, // width / height
       child: Container(
         decoration: BoxDecoration(
           color: Color(0xff4EB7F2),
@@ -24,7 +24,7 @@ class MyCard extends StatelessWidget {
       
         children: [
           ListTile(
-            contentPadding: EdgeInsets.only(left: 30, right: 30, top: 8),
+            contentPadding: EdgeInsets.only(left: 20, right: 20, top: 0),
             title: Text("Name card", style: AppStyles.styleRegular16.copyWith(color: Colors.white),),
             subtitle: Text("View Details", style: AppStyles.styleMedium20,),
             trailing: SvgPicture.asset(Assets.assetsImagesGallery)
@@ -39,8 +39,12 @@ class MyCard extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.end,
                   //mainAxisAlignment: MainAxisAlignment.end,
                   children: [
-                    Text("0918 8124 0042 8129", style:AppStyles.styleSemiBold24.copyWith(color: Colors.white),),
-                    Text("12/24 - 124", style: AppStyles.styleRegular16.copyWith(color: Colors.white),),
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text("0918 8124 0042 8129", style:AppStyles.styleSemiBold24.copyWith(color: Colors.white, ),)),
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text("12/24 - 124", style: AppStyles.styleRegular16.copyWith(color: Colors.white),)),
                   ],
                 ),
               ),

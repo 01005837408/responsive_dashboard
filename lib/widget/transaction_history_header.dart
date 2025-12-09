@@ -8,15 +8,19 @@ class TransactionHistoryHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        Text('Transaction History',style: AppStyles.styleSemiBold20,),
-        Padding(
-          padding: const EdgeInsets.only(right: 20.0, ),
-          child: Text('See all',style: AppStyles.styleMedium16.copyWith(color: Color(0xff4EB7F2)),),
-        )
-      ],
+    return FittedBox(
+      fit: BoxFit.scaleDown,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text('Transaction History',style: AppStyles.styleSemiBold20,),
+          SizedBox(width: 20,),
+          Padding(
+            padding: const EdgeInsets.only(right: 20.0, ),
+            child: Text('See all',style: AppStyles.styleMedium16.copyWith(color: Color(0xff4EB7F2)),),
+          )
+        ],
+      ),
     );
   }
 }
