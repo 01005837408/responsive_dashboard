@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
-import 'package:responsive_dashboard/utils/styles.dart';
-import 'package:responsive_dashboard/widget/dots_indicator.dart';
-import 'package:responsive_dashboard/widget/my_card.dart';
 
 class CustomDotIndicator extends StatelessWidget {
   const CustomDotIndicator({super.key, required this.isActive});

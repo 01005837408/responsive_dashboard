@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:responsive_dashboard/utils/styles.dart';
 import 'package:responsive_dashboard/widget/dots_indicator.dart';
-import 'package:responsive_dashboard/widget/my_card.dart';
 import 'package:responsive_dashboard/widget/my_card_page_view.dart';
 
 class MyCardSection extends StatefulWidget {
