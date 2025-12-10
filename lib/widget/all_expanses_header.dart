@@ -8,7 +8,7 @@ class AllExpansesHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return   Row(
       children: [
-        Text('All Expanses', style:AppStyles.styleSemiBold20 ,),
+        Text('All Expanses', style:AppStyles.styleSemiBold20(context) ,),
         Expanded(child: SizedBox()),
         Container(
         //  margin: EdgeInsets.only(top: 12),
@@ -26,7 +26,7 @@ class AllExpansesHeader extends StatelessWidget {
           ),
            child: Row(
               children: [
-                Text("Monthly",style: AppStyles.styleMedium16 ,),
+                Text("Monthly",style: AppStyles.styleMedium16(context) ,),
                 SizedBox(width: 16,),
                 Transform.rotate(
                   angle: -1.5708,

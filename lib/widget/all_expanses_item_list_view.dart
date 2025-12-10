@@ -39,9 +39,8 @@ class _AllExpansesItemListViewState extends State<AllExpansesItemListView> {
         int index = e.key;
         return Expanded(
           child: Padding(
-            padding: index == 1
-                ? const EdgeInsets.symmetric(horizontal: 12)
-                : EdgeInsets.zero,
+            padding:  EdgeInsets.symmetric(horizontal:index == 1 ? 6 :0),
+                
             child: InkWell(
               onTap: () {
                 setState(() {

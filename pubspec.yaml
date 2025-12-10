@@ -38,6 +38,7 @@ dependencies:
   gap: ^3.0.1
   expandable_page_view: ^1.2.0
   fl_chart: ^0.71.0
+  device_preview: ^1.2.0
   # asset_generator and flutter_assets_generator removed
 
 dev_dependencies:

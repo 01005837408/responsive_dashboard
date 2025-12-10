@@ -11,7 +11,7 @@ class CustomTextButton extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         backgroundColor: const Color(0xff4EB7F2),
         maximumSize: const Size(250, 55),
-        minimumSize: const Size(250, 50),
+        minimumSize: const Size(180, 40),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12),
         ),
@@ -20,7 +20,7 @@ class CustomTextButton extends StatelessWidget {
         onPressed: onPressed,
         child: Text(
           "Send Money",
-          style: AppStyles.styleMedium16.copyWith(color: Colors.white),
+          style: AppStyles.styleMedium16(context).copyWith(color: Colors.white),
         ));
   }
 }

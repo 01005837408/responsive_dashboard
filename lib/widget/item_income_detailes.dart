@@ -23,8 +23,8 @@ class ItemIncomeDetailes extends StatelessWidget {
             borderRadius: BorderRadius.circular(8)
           ),
         ),
-        title:Text(itemDetailesModel.title, style: AppStyles.styleRegular16.copyWith(fontSize: 16),) ,
-        trailing: Text(itemDetailesModel.value, style: AppStyles.styleMedium20.copyWith(color:Color(0xff208CC8) , fontSize: 16),),
+        title:Text(itemDetailesModel.title, style: AppStyles.styleRegular16(context).copyWith(fontSize: 16),) ,
+        trailing: Text(itemDetailesModel.value, style: AppStyles.styleMedium20(context).copyWith(color:Color(0xff208CC8) , fontSize: 16),),
       ),
     );
   }

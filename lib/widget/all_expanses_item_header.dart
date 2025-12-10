@@ -11,17 +11,24 @@ class AllExpansesItemHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(children: [
-      Container(
-        width: 32,
-        height: 32,
-        decoration: ShapeDecoration(
-          color: imageBackgroundColor??Color(0xFFFAFAFA),
-          shape: OvalBorder(),
-        ),
-        child: SvgPicture.asset(
-          image,
-        //  color: Colors.red,
-          colorFilter: ColorFilter.mode(imageColor??Color(0xff4EB7F2), BlendMode.srcIn),
+      Flexible(
+        child: AspectRatio(
+          aspectRatio: 1,
+          child: Container(
+            // width: 32,
+            // height: 32,
+            decoration: ShapeDecoration(
+              color: imageBackgroundColor??Color(0xFFFAFAFA),
+              shape: OvalBorder(),
+            ),
+            child: Center(
+              child: SvgPicture.asset(
+                image,
+              //  color: Colors.red,
+                colorFilter: ColorFilter.mode(imageColor??Color(0xff4EB7F2), BlendMode.srcIn),
+              ),
+            ),
+          ),
         ),
       ),
       Spacer(),

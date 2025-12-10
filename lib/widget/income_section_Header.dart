@@ -11,7 +11,7 @@ class IncomeSectionHeader extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-                Text("Income", style:AppStyles.styleSemiBold20),
+                Text("Income", style:AppStyles.styleSemiBold20(context)),
     
         Container(
           padding: EdgeInsets.symmetric(horizontal: 6, vertical: 6),
@@ -24,7 +24,7 @@ class IncomeSectionHeader extends StatelessWidget {
             )
             ),
           child: Row(children: [
-            Text("Monthly", style: AppStyles.styleMedium16,),
+            Text("Monthly", style: AppStyles.styleMedium16(context),),
             SizedBox(width: 18,),
             Transform.rotate(
               angle: -1.5708,

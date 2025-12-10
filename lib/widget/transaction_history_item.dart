@@ -16,11 +16,11 @@ class TransactionHistoryItem extends StatelessWidget {
         borderRadius: BorderRadius.circular(8),
       ),
       child: ListTile(
-        title:Text(transactionHistryModel.title, style: AppStyles.styleSemiBold16,),
-        subtitle: Text(transactionHistryModel.date, style: AppStyles.styleRegular16,),
+        title:Text(transactionHistryModel.title, style: AppStyles.styleSemiBold16(context),),
+        subtitle: Text(transactionHistryModel.date, style: AppStyles.styleRegular16(context),),
         trailing: Text(
           transactionHistryModel.amount ,
-          style: AppStyles.styleSemiBold20.copyWith(
+          style: AppStyles.styleSemiBold20(context).copyWith(
             color: transactionHistryModel.isWithdrawn ? Colors.green : Colors.red,
           ),
         ),

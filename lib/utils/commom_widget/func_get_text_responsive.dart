@@ -20,10 +20,10 @@ double getScalFactor(BuildContext context) {
   // var devicePixelRatio = dispatcher.views.first.devicePixelRatio;
   // double width = physicalWidth / devicePixelRatio;
   if (width < 700) {
-    return width / 500;
+    return width / 550;
   } else if (width < 1000) {
     return width / 800;
   } else {
-    return width / 1500;
+    return width / 1400;
   }
 }

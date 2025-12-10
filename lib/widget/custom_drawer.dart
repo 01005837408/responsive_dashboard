@@ -13,7 +13,9 @@ class CustomDrawer extends StatelessWidget {
     return Container(
       width: MediaQuery.of(context).size.width * 0.7,
       color: Colors.white,
-      child: Column(children: [
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
         UserInfoListTile(
           userInfoModel: UserInfoModel(
           title: "Lekan Okeowo",
@@ -23,7 +25,7 @@ class CustomDrawer extends StatelessWidget {
         ),
        SizedBox(height: 8,),
        DraerItemListView(),
-       Text("Logout", style: AppStyles.styleMedium16,)
+       Text("Logout", style: AppStyles.styleMedium16(context),)
       ]),
     );
   }
