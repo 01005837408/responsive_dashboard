@@ -10,15 +10,38 @@ class DashBoardMobileLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return CustomScrollView(
+      slivers: [
+        SliverToBoxAdapter(
+          child: Column(
+            children: [
+              AllExpansesAndQuickInvoisSection(),
+              SizedBox(
+                height: 24,
+              ),
+              MyCardAndTransactionSection(),
+              SizedBox(
+                height: 24,
+              ),
+              InComeSection(),
+            ],
+          ),
+        )
+      ],
+    );
     return SingleChildScrollView(
       child: Padding(
         padding: const EdgeInsets.only(right: 20, left: 20, bottom: 20.0),
         child: Column(
           children: [
             AllExpansesAndQuickInvoisSection(),
-            SizedBox(height: 24,),
+            SizedBox(
+              height: 24,
+            ),
             MyCardAndTransactionSection(),
-            SizedBox(height: 24,),
+            SizedBox(
+              height: 24,
+            ),
             InComeSection(),
           ],
         ),

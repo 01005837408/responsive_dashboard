@@ -7,7 +7,9 @@ class TabletDashboardLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    double width = MediaQuery.of(context).size.width;
+    print("width $width");
+    return Row(
       children: [
         Expanded(
           child:CustomDrawer(),

@@ -33,11 +33,20 @@ class InActiveAllExpancesItem extends StatelessWidget {
             image: allExpansesItemModel.image,
           ),
     Gap(34),
-          Text(allExpansesItemModel.title, style:AppStyles.styleSemiBold20(context) ,),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child:Text(allExpansesItemModel.title, style:AppStyles.styleSemiBold20(context) ,),
+          ),
           Gap(16),
-          Text(allExpansesItemModel.data, style:AppStyles.styleMedium16(context) ,),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child:Text(allExpansesItemModel.data, style:AppStyles.styleMedium16(context) ,),
+          ),
           Gap(16),
-          Text(allExpansesItemModel.price, style:AppStyles.styleMedium16(context) ,),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child:Text(allExpansesItemModel.price, style:AppStyles.styleMedium16(context) ,),
+          ),
           
         ],
       ),
@@ -61,7 +70,7 @@ class ActiveAllExpancesItem extends StatelessWidget {
         shape: RoundedRectangleBorder(
           side: BorderSide(
             width: 1,
-            color: Color(0xffF1F1F1),
+             color: Color(0xff4EB7F2),
           ),
           borderRadius: BorderRadius.circular(12),
         ),
@@ -75,11 +84,20 @@ class ActiveAllExpancesItem extends StatelessWidget {
             image: allExpansesItemModel.image,
           ),
     Gap(34),
-          Text(allExpansesItemModel.title, style:AppStyles.styleSemiBold20(context).copyWith(color: Colors.white) ,),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child:Text(allExpansesItemModel.title, style:AppStyles.styleSemiBold20(context).copyWith(color: Colors.white) ,),
+          ),
           Gap(12  ),
-          Text(allExpansesItemModel.data, style:AppStyles.styleMedium16(context).copyWith(color: Color(0xffFAFAFA)) ,),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child:Text(allExpansesItemModel.data, style:AppStyles.styleMedium16(context).copyWith(color: Color(0xffFAFAFA)) ,),
+            ),
           Gap(12),
-          Text(allExpansesItemModel.price, style:AppStyles.styleMedium16(context).copyWith(color: Colors.white, fontSize: 24) ,),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child:Text(allExpansesItemModel.price, style:AppStyles.styleMedium16(context).copyWith(color: Colors.white, fontSize: 24) ,),
+          ),
           
         ],
       ),

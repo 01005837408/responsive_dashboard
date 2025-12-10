@@ -38,13 +38,16 @@ class QuickInvoisForm extends StatelessWidget {
             )),
           ],
         ),
-       // Gap(12),
+        Gap(6),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            TextButton(onPressed: (){}, child: Text("Add more details", style: AppStyles.styleSemiBold18(context).copyWith(color :Color(0xff4EB7F2)),)),
+            TextButton(onPressed: (){}, child: FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text("Add more details", style: AppStyles.styleSemiBold18(context).copyWith(color :Color(0xff4EB7F2)),))),
             Expanded(child: SizedBox(),),
-            CustomTextButton(onPressed: (){}),
+            Flexible(child: CustomTextButton(onPressed: (){})),
           ],
         ),
       ],
